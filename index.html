@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR STYLE X – Fahrzeugveredelung</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0a0a;
+            color: #f0f0f0;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        header {
+            background-color: #111;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .logo span {
+            color: red;
+        }
+        nav a {
+            margin-left: 25px;
+            font-size: 16px;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url('https://images.unsplash.com/photo-1617140048933-5e9f7e53b9ea') no-repeat center center/cover;
+            padding: 150px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .hero p {
+            font-size: 20px;
+            color: #ccc;
+        }
+        .cta-button {
+            margin-top: 30px;
+            padding: 14px 28px;
+            background-color: red;
+            color: white;
+            font-size: 18px;
+            border-radius: 6px;
+            display: inline-block;
+        }
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: red;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .service-card h3 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .service-card p {
+            color: #ccc;
+        }
+        .about, .contact {
+            text-align: center;
+            max-width: 800px;
+        }
+        .contact-form {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background-color: red;
+            color: white;
+            padding: 14px;
+            border: none;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">CAR STYLE <span>X</span></div>
+    <nav>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ueberuns">Über uns</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Dein Fahrzeug. Dein Stil. Unsere Leidenschaft.</h1>
+    <p>Professionelle Fahrzeugveredelung – von Scheibentönung bis Dellentechnik. Präzise. Stylisch. Zuverlässig.</p>
+    <a href="#kontakt" class="cta-button">Jetzt Termin vereinbaren</a>
+</section>
+
+<section id="leistungen">
+    <h2>Unsere Leistungen</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>🔲 Scheibentönung</h3>
+            <p>Tönung mit Stil und Funktion: Hitzeschutz, UV-Filter und eleganter Look – professionell und mit Garantie.</p>
+        </div>
+        <div class="service-card">
+            <h3>🎨 Fahrzeugfolierung</h3>
+            <p>Matt, glänzend oder wild: Wir folieren dein Auto ganz nach deinem Geschmack – hochwertig & langlebig.</p>
+        </div>
+        <div class="service-card">
+            <h3>🛠️ Dellentechnik</h3>
+            <p>Dellenentfernung ohne Lackieren (PDR) – schnell, präzise und 100 % lackschonend.</p>
+        </div>
+        <div class="service-card">
+            <h3>🪟 Scheibenwechsel</h3>
+            <p>Riss in der Frontscheibe? Wir ersetzen Autoglas fachgerecht, terminsicher und mit Qualitätsmaterial.</p>
+        </div>
+        <div class="service-card">
+            <h3>🚙 Reifenservice</h3>
+            <p>Sommer? Winter? Ganzjahresreifen? Wir wechseln und prüfen – schnell, sauber, professionell.</p>
+        </div>
+    </div>
+</section>
+
+<section id="ueberuns">
+    <h2>Über uns</h2>
+    <div class="about">
+        <p><strong>CAR STYLE X – Fahrzeugveredelung mit Anspruch</strong></p>
+        <p>Wir sind ein junges, leidenschaftliches Team mit einem Ziel: Dein Auto soll nicht nur fahren – es soll beeindrucken. Mit modernster Technik, hochwertigem Material und absolutem Qualitätsanspruch machen wir jedes Fahrzeug zu einem echten Statement.</p>
+    </div>
+</section>
+
+<section id="kontakt">
+    <h2>Kontakt</h2>
+    <div class="contact">
+        <p>📧 E-Mail: <a href="mailto:info@carstylex.de">info@carstylex.de</a></p>
+        <p>📲 WhatsApp: <a href="https://wa.me/">Hier klicken</a></p>
+        <form class="contact-form">
+            <input type="text" placeholder="Dein Name" required>
+            <input type="email" placeholder="Deine E-Mail" required>
+            <textarea rows="5" placeholder="Deine Nachricht" required></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 CAR STYLE X – Alle Rechte vorbehalten
+</footer>
+
+</body>
+</html>
